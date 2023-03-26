@@ -2,16 +2,22 @@ import Link from "next/link";
 import NavbarItem from "./NavbarItem";
 import { FiHome, FiInfo, FiTrendingUp } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
+import DarkMode from "./DarkMode";
 
 export default function Navbar() {
   return (
     <div className="flex items-center justify-between max-w-6xl mx-auto py-4 sm:px-12 px-4">
-      <h2 className="logo sm:text-2xl text-xl font-bold">
-        <Link href="/">
-          <span className="bg-amber-400 px-2 pb-1 rounded-lg mr-1">MOVIES</span>
-          <span className="sm:inline hidden">DB</span>
-        </Link>
-      </h2>
+      <div className="flex items-center space-x-4">
+        <h2 className="logo sm:text-2xl text-xl font-bold">
+          <Link href="/">
+            <span className="bg-amber-400 text-slate-200 px-2 pb-1 rounded-lg mr-1">
+              MOVIES
+            </span>
+            <span className="sm:inline hidden">DB</span>
+          </Link>
+        </h2>
+        <DarkMode />
+      </div>
       <nav className="flex items-center">
         <ul className="flex items-center space-x-4">
           <NavbarItem
