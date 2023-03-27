@@ -5,3 +5,7 @@
 html::-webkit-scrollbar {
   display: none;
 }
+
+.about {
+  min-height: calc(100vh - 180px);
+}

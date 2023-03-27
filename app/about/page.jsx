@@ -4,7 +4,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="py-4 px-6 sm:px-8 max-w-6xl mx-auto space-y-4">
+    <div className="about py-4 px-6 sm:px-8 max-w-6xl mx-auto space-y-4">
       <h1 className="font-medium text-2xl text-amber-500">About</h1>
       <p>
         Welcome to our movie database website! We are a team of passionate movie

@@ -19,18 +19,21 @@ export default function Search() {
   };
 
   return (
-    <form className="bg-slate-500 py-2" onSubmit={handleSubmit}>
+    <form
+      className="dark:bg-slate-500 bg-amber-200 py-2"
+      onSubmit={handleSubmit}
+    >
       <div className="max-w-6xl mx-auto sm:px-12 px-4 flex items-center space-x-2">
         <input
           type="text"
           placeholder="Search Keyword..."
-          className="flex-1 bg-transparent border-none outline-none text-white placeholder:text-white dark:text-slate-200 dark:placeholder:text-slate-400"
+          className="flex-1 bg-transparent border-none outline-none dark:text-white dark:placeholder:text-white text-slate-500 placeholder:text-slate-400"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           ref={searchRef}
         />
         <button
-          className="outline-none border-none bg-transparent hover:text-amber-400 disabled:hover:text-slate-200"
+          className="outline-none border-none bg-transparent dark:hover:text-amber-400 hover:text-amber-600 disabled:hover:text-slate-200"
           disabled={!search}
         >
           Search

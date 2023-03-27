@@ -1,4 +1,5 @@
 import Providers from "./Providers";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
 import "./globals.css";
@@ -20,6 +21,9 @@ export default function RootLayout({ children }) {
           <Search />
 
           {children}
+
+          {/* Footer */}
+          <Footer />
         </Providers>
       </body>
     </html>
