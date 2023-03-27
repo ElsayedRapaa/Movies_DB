@@ -1,7 +1,3 @@
 export default function Home() {
-  return (
-    <main>
-      <h1>Welcome In Movies DB</h1>
-    </main>
-  );
+  return <main className="max-w-6xl mx-auto py-8"></main>;
 }
