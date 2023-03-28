@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
-.about {
+.about,
+.main,
+.movieID {
   min-height: calc(100vh - 180px);
 }

@@ -1,7 +1,11 @@
-export default function Home() {
+import Cover from "./components/Cover";
+import Row from "./components/Row";
+
+export default async function Home() {
   return (
-    <main>
-      <h1>Welcome In Movies DB</h1>
+    <main className="main pb-8">
+      <Cover />
+      <Row />
     </main>
   );
 }
