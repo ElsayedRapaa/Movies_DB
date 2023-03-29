@@ -33,12 +33,12 @@ export default function Navbar() {
             />
             <NavbarItem
               title="TRENDING"
-              link="/trending"
+              link="/movies_trending"
               icon={<FiTrendingUp className="sm:hidden inline text-2xl" />}
             />
             <NavbarItem
               title="TOP RATED"
-              link="/top_rated"
+              link="/movies_top_rated"
               icon={<FaStar className="sm:hidden inline text-2xl" />}
             />
           </ul>

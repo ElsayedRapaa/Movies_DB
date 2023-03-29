@@ -7,9 +7,9 @@ export default function RowItem({ movies, series, title, genres }) {
     <>
       <Link
         href={title.toLowerCase().replaceAll(" ", "_")}
-        className="font-bold text-lg sm:text-xl"
+        className="font-bold text-lg sm:text-xl underline"
       >
-        {title}
+        ⇛ {title} 🚀
       </Link>
       <div className="grid grid-flow-col overflow-x-auto space-x-4 pb-2">
         {movies
